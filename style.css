@@ -1,0 +1,243 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Rubik', sans-serif;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    position: relative;
+}
+.navbar{
+    /*to display side by side =dislp flex*/
+    display: flex;
+    justify-content: space-between;
+    margin-left: 100px;
+    width: 85%;
+}
+.logo{
+    width: 120px;
+    height: 130px;
+}
+.linkitems {
+    display: inline-block;
+    /*top bottom=10px left rigt 20px*/
+    margin: 10px 20px;
+    margin-top: 100px;
+    
+}
+.links {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    
+}
+/* pseudo clss*/
+.links:hover {
+    color: red;
+    text-decoration: underline;
+}
+.title{
+    margin-top: 13%;
+    margin-left: 8%;
+}
+.title_h1{
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+#lastname{
+    color: #ffa500;
+}
+.download{
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 30px;
+}
+.download:hover{
+    background-color: grey;
+}
+.images{
+    position: absolute;
+    width: 45%;
+    height: 80%;
+    bottom: 0px;
+    right: 30px;
+    
+}
+.images img{
+    position: absolute;
+    height: 100%;
+    left: 50%;
+    bottom: 0px;
+    transform: translateX(-50%);
+    transition: bottom 1s, left 2s;
+    
+}
+.images:hover #shape{
+    bottom: 70px;
+}
+.images:hover #girl{
+    left: 70%;
+}
+#about{
+    margin: 16% 8% 0px 8%;
+
+}
+.heading{
+    text-align: center;
+
+}
+.heading h2{
+    font-size: 30px;
+}
+.heading span{
+    font-size: 20px;
+    color: green;
+}
+.about_content{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin-top: 2rem;
+}
+.about-img img{
+    width: 80%;
+    border-radius: 1rem;
+}
+.about_details{
+    font-size: 18px;
+    font-weight: 400;
+    text-align: justify;
+}
+.informations{
+    margin-top: 25px;
+
+}
+.info-box {
+    margin-bottom: 1rem;
+}
+html{
+    scroll-behavior: smooth;
+}
+#skills{
+    margin: 8% 8% 0px 8%;
+}
+.skill_container{
+
+display: grid;
+grid-template-columns: repeat(2,1fr);
+gap: 2rem;
+margin-top: 2rem;
+}
+.skill-img img{
+    width: 120%;
+    padding-left: 4rem;
+}
+.bar-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0px;
+    margin-bottom: 1rem;
+    position: relative;
+}
+.base-bar{
+    width: 120%;
+    height: 0.5rem;
+    background-color: black;
+    border-radius: 5rem;
+    position: absolute;
+    bottom: 0px;
+    left: -100px;
+}
+.html-bar{
+    width: 95%;
+    background-color: rgb(252, 215, 10);
+}
+.css-bar{
+    width: 88%;
+    background-color: rgb(252, 215, 10);
+}
+.js-bar{
+    width: 89%;
+    background-color: rgb(252, 215, 10);
+}
+.react-bar{
+    width: 85%;
+    background-color: rgb(252, 215, 10);
+}
+.bar-container h3{
+    margin-left: -90px;
+}
+.icon-set{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3%;
+}
+.icon{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 10px;
+}
+.icon i{
+    font-size: 30px;
+    color: black;
+}
+.icon:hover{
+    background-image: linear-gradient(to bottom left , yellow, grey);
+}
+.icon:hover i{
+    color: whitesmoke;
+    animation: fade 0.75s;
+}
+@keyframes fade{
+    20%{
+        transform: rotate(15deg);
+    }
+    40%{
+        transform: rotate(-15deg);
+    }
+    60%{
+        transform: rotate(15deg);
+    }
+    80%{
+        transform: rotate(-15deg);
+    }
+    100%{
+        transform: rotate(15deg);
+    }
+}
+.para{
+    text-align: center;
+    font-weight: bold;
+    margin-top: 3%;
+}
+.up-arrow{
+    float: right;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+     width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 30px;
+    background-image: linear-gradient(to bottom left, yellow, grey);
+    color: black;
+}
+.up-arrow:hover i{
+    color: white;
+}
+
+
